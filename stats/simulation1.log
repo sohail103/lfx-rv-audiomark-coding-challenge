@@ -1,0 +1,28 @@
+root@2633baa90c40:/work# build/RISCV/gem5.opt configs/deprecated/example/se.py --cmd=/audiomark/hybridoutput-4 --cpu-type=MinorCPU --caches
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 25.1.0.0
+gem5 compiled Jan 29 2026 13:45:38
+gem5 started Feb  1 2026 04:51:04
+gem5 executing on 2633baa90c40, pid 13
+command line: build/RISCV/gem5.opt configs/deprecated/example/se.py --cmd=/audiomark/hybridoutput-4 --cpu-type=MinorCPU --caches
+
+warn: The se.py script is deprecated. It will be removed in future releases of  gem5.
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/arch/riscv/isa.cc:321: info: RVV enabled, VLEN = 256 bits, ELEN = 64 bits
+src/arch/riscv/linux/se_workload.cc:73: warn: Unknown operating system; assuming Linux.
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/cpu/minor/execute.cc:164: warn: No functional unit for OpClass SimdUnitStrideSegmentedLoad
+src/cpu/minor/execute.cc:164: warn: No functional unit for OpClass SimdUnitStrideSegmentedStore
+src/cpu/minor/execute.cc:164: warn: No functional unit for OpClass SimdUnitStrideSegmentedFaultOnlyFirstLoad
+src/cpu/minor/execute.cc:164: warn: No functional unit for OpClass SimdStrideSegmentedLoad
+src/cpu/minor/execute.cc:164: warn: No functional unit for OpClass SimdStrideSegmentedStore
+system.remote_gdb: Listening for connections on port 7000
+**** REAL SIMULATION ****
+Cycles ref: 6440
+Verify RVV: OK (max diff = 0)
+Cycles RVV: 6967
+Exiting @ tick 114154500 because exiting with last active thread context
